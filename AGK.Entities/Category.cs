@@ -14,9 +14,6 @@ namespace AGK.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         public string Name { get; set; }
-        public int RootID { get; set; }
-        public Category Root { get; set; }
-
         public ICollection<Product> Products { get; set; }
 
     }

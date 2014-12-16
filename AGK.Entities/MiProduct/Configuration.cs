@@ -1,4 +1,4 @@
-﻿namespace AGK.Entities.Migrations
+﻿namespace AGK.Entities.MiProduct
 {
     using System;
     using System.Data.Entity;
@@ -10,8 +10,8 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            MigrationsDirectory = @"Migrations";
-            
+            MigrationsDirectory = @"MiProduct";
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(AGK.Entities.ProductDbContext context)
