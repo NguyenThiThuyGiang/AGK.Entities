@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AGK.Service
+namespace AGK.Models
 {
-    public class Class1
+    public class ManufacturerVm
     {
+        public int ID { get; set; }
+        public string Name { get; set; }
     }
 }

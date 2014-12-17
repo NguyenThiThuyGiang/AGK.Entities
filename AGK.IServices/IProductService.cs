@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AGK.Models;
 
 namespace AGK.IServices
 {
     public interface IProductService
     {
-        IEnumerable<ProductVM> FindByCategory(int category);
-        IEnumerable<ProductVM> FindByCategory(int manufactory);
-        ProductVM FindById(Guid product);
-        IEnumerable<ProductVM> GetRandoms(int category);
-        IEnumerable<ProductVM> GetNews(int category);
-        IEnumerable<ProductVM> GetNews();
-        IEnumerable<ProductVM> GetBestSellers();
-        IEnumerable<ProductVM> GetBestSellers(int category);
-        bool Add(ProductDetailVM product);
-        bool Update(ProductDetailVM product);
+        IEnumerable<ProductVm> FindByCategory(int category);
+        IEnumerable<ProductVm> FindByManuFacturer(int manufactory);
+        ProductVm FindById(Guid product);
+        IEnumerable<ProductVm> GetRandoms(int category);
+        IEnumerable<ProductVm> GetNews(int category);
+        IEnumerable<ProductVm> GetNews();
+        IEnumerable<ProductVm> GetBestSellers();
+        IEnumerable<ProductVm> GetBestSellers(int category);
+        bool Add(ProductDetail product);
+        bool Update(ProductDetail product);
         bool Delete(Guid product);
 
     }
