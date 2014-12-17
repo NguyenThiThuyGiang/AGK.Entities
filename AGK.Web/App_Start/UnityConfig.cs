@@ -1,4 +1,6 @@
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using AGK.IServices;
+using AGK.Service;
 using Microsoft.Practices.Unity;
 using Unity.Mvc5;
 
@@ -10,11 +12,9 @@ namespace AGK.Web
         {
 			var container = new UnityContainer();
             
-            // register all your components with the container here
-            // it is NOT necessary to register your controllers
-            
-            // e.g. container.RegisterType<ITestService, TestService>();
-            
+            //  Đăng kí các Service
+            container.RegisterType<IProductService, ProductService>();
+;            
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }

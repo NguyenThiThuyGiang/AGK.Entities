@@ -39,6 +39,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AGK.IServices">
+      <HintPath>..\AGK.IServices\bin\Debug\AGK.IServices.dll</HintPath>
+    </Reference>
+    <Reference Include="AGK.Service">
+      <HintPath>..\AGK.Service\bin\Debug\AGK.Service.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
